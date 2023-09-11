@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>
+            Dom Property
+        </title>
+    </head>
+    <body>
+
+        <h1 id="data1">Welcome To JavaScript</h1>
+
+        <h1 id="data2"><mark>To HTML </mark> </h1>
+<button onclick="click1()">shift</button>
+        <script>
+
+
+///Ith ky sagayach ki ze vapn apn innerHtml use kerto teva data ha alla tag sagach support houn yeto 
+//vaa zr apn innerText ha use kela tr too data sangach yto pn to tage sare pn support kr nahi
+
+//
+
+function click1()
+{
+
+
+            var s1=document.getElementById('data1').innerText;
+
+            var s2=document.getElementById("data2").innerText;
+
+            document.getElementById('data1').innerHTML=s2;
+
+            document.getElementById("data2").innerHTML=s1
+
+        }
+
+        </script>
+
+
+    </body>
+</html>

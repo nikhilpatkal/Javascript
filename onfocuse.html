@@ -1,0 +1,47 @@
+<html>
+    <head>
+    <title>
+        focus event
+    </title>
+</head>
+<body>
+    <h1>focuse event</h1>
+
+    <form>
+        <input type="text" id="text1" onfocus="change('text1')" onblur="change3('text1')"><br><br>
+        <input type="text" id="text2"onfocus="change('text2')" onblur="change3('text2')"><br><br>
+        <input type="text" id="text3"onfocus="change('text3')" onblur="change3('text3')"><br><br>
+<select id="chose" onchange="change3()"> 
+<option>red</option>
+<option>black</option>
+<option>green</option>
+<option>purple</option>
+
+</select>
+
+
+
+
+    </form>
+//he ky ahe ki onfocuse ky ahe ki zr apn textfield click kel tr te color change krta ani onbluer ky ahe ki te soudun kely vr to color change krto 
+    <script>
+
+        function change3()
+        {
+            document.getElementById("chose").style.background="red"
+        }
+        function change(val)
+        {
+            document.getElementById(val).style.background="red"
+        }
+
+        function change3(val)
+        {
+            document.getElementById(val).style.background="pink"
+        }
+    </script>
+
+
+</body>
+
+</html>

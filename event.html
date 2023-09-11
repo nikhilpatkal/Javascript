@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>event page</title>
+    </head>
+
+    <body>
+        <h1>This is the event page to handle</h1>
+<div style="width: 50%;height: 500px;background-color: red;" onclick="change()"id="color"ondblclick="change1() "oncontextmenu="right()"></div>
+        <script>
+            function change()
+            {
+                document.getElementById("color").style.background="black";
+                document.getElementById("color").style.borderRadius="50%";
+            }
+            function change1()
+            {
+                document.getElementById("color").style.background="blue"
+            }
+
+            function right(){
+                document.getElementById("color").style.background="yellow"
+            }
+
+
+
+        </script>
+    </body>
+</html>

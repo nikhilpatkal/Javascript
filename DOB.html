@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <title>
+            DOM
+        </title>
+    </head>
+    <body>
+        <h1>Welcome To DOB</h1>
+
+        <h2 id="para">lorefdewcddddddddddddddddddddddddddddddddddddddddddddds</h2>
+
+
+        <h1 class="data">Welcome To JS 1</h1>
+        <h1 class="data1">Welcome To JS 2</h1>
+        <h1 class="data">Welcome To JS 3</h1>
+        <h1 class="data">Welcome To JS 4</h1>
+        <h1 class="data2">Welcome To JS 5</h1>
+        <h1 class="data">Welcome To JS 6</h1>
+        <h1 class="data3">Welcome To JS 7</h1>
+
+
+
+        <h1>Welcome Nikhil</h1>
+
+        <h1>Welcome Nikhil Patkal</h1>
+
+        <h2>Welcome Back Nikhil</h2>
+
+        <h2>Welcome Back Nikhil Kiran Patkal</h2>
+
+        <p>Welcome once agin Nikhil</p>
+
+        <pre>come Nikhil</pre>
+
+
+        <p>Enter a Number</p>
+        <input type="text" value="Nikhil" name="n1">
+        enter mobile number
+        <input type="text" name="n2">
+    <h1 id ="n1"></h1>
+
+        </h2>
+        <script>
+            //This is By ID
+        //get
+        //     var da=document;
+        //     var da1=document.head
+        //     var da2=document.body
+        //     console.log(da)
+        //     console.log(da1)
+        //     console.log(da2)
+        //     //document ha full body access kryala use hot and document.head ani document.body ha body acces kryala hot )
+
+        //set
+        //    var data= document.getElementById("para").innerHTML;
+        //     console.log(data)
+        //     document.getElementById("n1").innerHTML=data
+
+        //This is By Class
+
+        //get
+        var d1=document.getElementsByClassName('data')
+        console.log(d1);// when class is multiple then it store in array by using index we can access the innerhtml
+        console.log(d1[0].innerHTML);//by using this you can access the content
+
+        //set
+        //ata apn ith ahena ki tych array madla data update kela ahe
+
+        document.getElementsByClassName('data')[1].innerHTML="updated data"
+
+
+        document.getElementsByClassName('data2')[0].innerHTML="one class "//last la array lagtoch karan ki zari data multiple nsla taripn to ahena array madhe store krto
+
+
+
+        //BY Tag Now
+        //get
+
+        var s=document.getElementsByTagName('p') // by using that tag name we can access the data
+        console.log(s[0])
+
+
+        var b=document.getElementsByTagName('h1')//ithepn array concept laguhoto br ka
+
+        console.log(b[0])
+
+        //set
+
+        document.getElementsByTagName('h1')[0].innerHTML="hello Nikhil"
+
+
+
+        //By Name
+        //get
+        var x=document.getElementsByName('n1');
+        console.log(x[0].value)
+
+
+        //set
+        document.getElementsByName('n2')[0].value="9322908183"
+      
+
+
+
+
+
+        //document
+        // document.getElementById()
+        // document.getElementsByClassName()
+        // document.getElementsByTagName()
+        // document.getElementsByName()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,158 @@
+<html>
+<head>
+<title>first page </title>
+</head>
+<body>
+
+	//inline css 
+<h1 onclick="alert('hello')">Welcome to JavaScript</h1>
+
+<h1 id="data">Welcome To JavaScript</h1>
+<script type="text/javascript">
+	document.getElementById('data').style.color='red';
+
+	var name="nikhil";
+	document.write(name);
+
+	if(true)
+	{
+		let srname="patkal";
+		document.write(name)
+		document.write(srname)//the scope of var is global 
+	}
+	// document.write(srname);//the scope of let is specific 
+
+
+
+	// DataType In Javascript
+
+	//Number DataType 1)integer
+						//2)Float
+	//String DataType 1)char
+						//2)String
+	//Dooble like 
+						//var a=True
+	//
+
+var a=100;
+var b=200;
+var c=900;
+total=a+b+c;
+document.write(total)
+
+var str=''
+var str1="rohit";
+document.write(typeof str1)//typeof is use to see which type variable is this 
+
+document.write(`this is string ${str1}`)//jr aplyla string madhe lihayach asel tr mg as kryach ki zs formated string 	
+
+let data=10;
+
+data="hello";
+document.write(data);
+
+var s="nikhil";
+var s=10;
+
+document.write(s)
+
+nikhil="MSC CS I";
+var nikhil;//this can be happen with var and let
+
+document.write("<br>")
+document.write(nikhil);
+
+// document.write("<br>")
+// patkal="chapadgaon";//this give reference error in let this not happenc 
+// let patkal="shevgaon";
+// document.write(patkal)
+//function in javascript
+//nonparametric function
+function add()
+{
+	var a=prompt("enter first number")
+	var b=prompt("enter secound number")
+	var c=Number(a)+Number(b)
+	document.write(c)
+}
+
+//parametrise function 
+
+function add(a,b)
+{
+	var c=a+b
+	return c;
+}
+document.write(add(10,40));
+
+
+//ananomus function
+
+// var z=function(){
+// 	alert("hello")
+// }
+// z()
+
+var x=()=>{
+	document.write("array function call");
+}
+x()
+
+//nested function
+
+// function outer()
+// {
+// 	function inner()
+// 	{
+// 		return 10+10;
+// 	}
+
+// 	return inner();
+// }
+
+// document.write(outer())
+
+
+//object in javascript 
+
+var v={"name":"nikhil",
+"number":9322908183,
+"age":21}
+
+document.write(v+"<br><br>")
+document.write(v.name)
+document.write(v.number)
+
+
+var ob={
+	"Emp_name":"Nikhil_Patkal",
+	"Emp_Id":123,
+	"nest":{
+		"dep":"computer",
+		"salary":237338,
+		"experience":"3years"
+	}
+}
+document.write("<br><br>")
+document.write(ob.Emp_name)
+document.write("<br><br>")
+document.write(ob.nest.dep)
+document.write("<br><br>")
+for(key in ob)
+{
+	document.write(key)
+	document.write("<br><br>")
+	for( i in ob[key])
+	{
+	
+		document.write(ob[key][i])
+	}
+}
+</script>
+
+<button onclick="add()">add</button>
+
+
+
+</body>
+</html>
