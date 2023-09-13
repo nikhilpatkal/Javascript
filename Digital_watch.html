@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>digital watch</title>
+    </head>
+    <body onload="timer()" style="background-color: black;">
+        <H1 style="color: aliceblue;text-align: center;font-family: Orbitron;">The digital Watch</H1>
+
+        <p id="timer"style="color:skyblue;font-Size:100px;background-color:black;font-family: Orbitron;text-align: center;">
+
+            
+    </p>
+
+        <script>
+             function timer()
+           {
+            var today=new Date();
+            var date = new Date();
+             var h = date.getHours(); // 0 - 23
+             var m = date.getMinutes(); // 0 - 59
+            var s = date.getSeconds(); // 0 - 59
+            var session="AM"
+            
+
+            if(h==0)
+            {
+                h=12
+            }
+            else(h>12)
+            {
+                h=h-12
+                session="PM";
+            }
+            time=h+":"+m+":"+s+":"+session
+          
+         
+            document.getElementById("timer").innerHTML=time;
+            
+            setTimeout(timer,200);
+           }
+           
+           
+            
+
+
+        </script>
+    </body>
+</html>
