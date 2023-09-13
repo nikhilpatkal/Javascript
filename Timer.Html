@@ -1,0 +1,44 @@
+<html>
+    <head>
+
+    </head>
+    <body style="background-color: rgb(120, 77, 77);">
+        <h1>hello</h1>
+
+
+        <div  style="text-align: center;">
+            <div><p id="val"style="font-Size:60px;"></p></div>
+            <button id="start"style="width:200px;height:100px;border-radius:20px;background-color:black;color:white;font-Size:24px"onclick="counter()">Start</button>
+        </div>
+
+        <script>
+            var hour=0;
+            var min=0;
+            var sec=0;
+            var mili=0;
+
+            function counter()
+            {
+                document.getElementById('val').innerHTML=hour+":"+min+":"+sec+":"+mili
+                setTimeout(counter,100)
+                mili++
+                if(mili==60)
+                {
+                    mili=0
+                sec++;
+                if(sec==60)
+                {
+                    sec=0
+                    min++;
+                    if(min==60)
+                    {
+                        hour++
+                        
+                    }
+                }
+                }
+            }
+            
+        </script>
+    </body>
+</html>
