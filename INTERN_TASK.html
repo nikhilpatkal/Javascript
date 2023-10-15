@@ -1,0 +1,35 @@
+<!-- Create a simple website using CSS, HTML,
+JAVASCRIPT to convert temperature form
+Celsius to Fahrenheit and etc. -->
+
+
+<html>
+    <head>
+        <title>temp converter</title>
+        
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="body">
+        <div class="box">
+            <input type="number"  placeholder="Enter a Value Celsius" class="text" id="Celsius" oninput="Fahrenheit()"><br>
+            <input type="text"placeholder="Your Converted temperature To Fahrenheit"id="Fer"  class="text">
+            
+        </div>
+<script>
+    var Fahrenheit1;
+
+    function Fahrenheit() {
+        Fahrenheit1 = document.getElementById('Celsius').value;
+        Fahrenheit1 = (Fahrenheit1 * 9 / 5) + 32;
+        console.log(Fahrenheit1);
+        document.getElementById('Fer').value = Fahrenheit1+" Fahrenheit";
+    }
+</script>
+
+
+
+        
+
+    </body>
+</html>
